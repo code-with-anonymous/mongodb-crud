@@ -1,26 +1,16 @@
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
-  fullName: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true, // Ensures email is unique
-  },
-  status: {
-    type: String,
-    required: true,
-    enum: ["active", "inactive"], // Example of status values
-  },
-  password: {
-    type: String,
-    required: true,
-  }
-});
+  
+    title: { type: String, required: true },
+    price: { type: Number, required: true },
+    description: { type: String, required: true },
+  }, 
+  {
+    timestamps: true, // Adds createdAt and updatedAt timestamps
+  });
 
-const UserModel = mongoose.model("users", UserSchema);
 
-module.exports = UserModel;
+const todoModel = mongoose.model("todos", UserSchema);
+
+module.exports = todoModel;

@@ -1,0 +1,48 @@
+.add-product-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa; /* Light gray background for a modern look */
+    padding: 20px;
+  }
+  
+  .form-wrapper {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background: #007bff; /* Bootstrap primary color */
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #0056b3;
+  }
+  
+  input, textarea {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .form-wrapper {
+      padding: 20px;
+    }
+  }
+  
